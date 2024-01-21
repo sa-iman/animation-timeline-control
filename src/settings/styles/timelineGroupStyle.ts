@@ -30,4 +30,6 @@ export interface TimelineGroupStyle {
    * Style for all the keyframes in the current group.
    */
   keyframesStyle: TimelineKeyframeStyle;
+
+  backgroundImage?: HTMLImageElement | HTMLImageElement[];
 }

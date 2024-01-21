@@ -51,6 +51,7 @@ import { TimelineEvents } from './enums/timelineEvents';
 import { TimelineScrollSource } from './enums/timelineScrollSource';
 import { defaultTimelineConsts } from './settings/defaults/defaultTimelineConsts';
 import { defaultTimelineOptions } from './settings/defaults/defaultTimelineOptions';
+import { TimelineGroup } from './models/timelineGroup';
 
 export class Timeline extends TimelineEventsEmitter {
   /**
@@ -1791,7 +1792,49 @@ export class Timeline extends TimelineEventsEmitter {
       if (rectBounds?.rect) {
         this._ctx.fillStyle = keyframeLaneColor;
         const rect = rectBounds.rect;
-        this._ctx.fillRect(rect.x, rect.y, rect.width, rect.height);
+
+        let backgroundImage = (groupsViewModels?.groupModel as TimelineGroup)?.style?.backgroundImage;
+
+        if (!backgroundImage) {
+          this._ctx.fillRect(rect.x, rect.y, rect.width, rect.height);
+          return;
+        }
+
+        const ctx = this._ctx;
+
+        let x = rect.x;
+        let remainingWidth = rect.width;
+        backgroundImage = Array.isArray(backgroundImage) ? backgroundImage : [backgroundImage];
+
+        backgroundImage.forEach((image) => {
+          if (remainingWidth <= 0) return;
+
+          const ratio = image.naturalWidth / image.naturalHeight;
+          const height = rect.height;
+          const width = Math.min(height / ratio, remainingWidth);
+
+          ctx.drawImage(image, x, rect.y, width, height);
+          x += width;
+          remainingWidth -= width;
+        });
+
+        if (remainingWidth > 0) {
+          const lastImage = backgroundImage.at(-1);
+
+          if (!lastImage) return;
+
+          const ratio = lastImage.naturalWidth / lastImage.naturalHeight;
+          const height = rect.height;
+          const imageWidth = height / ratio;
+
+          while (remainingWidth > 0) {
+            const width = Math.min(imageWidth, remainingWidth);
+
+            ctx.drawImage(lastImage, x, rect.y, width, height);
+            x += width;
+            remainingWidth -= width;
+          }
+        }
       }
     });
   };
