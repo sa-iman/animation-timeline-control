@@ -1,6 +1,6 @@
-import { TimelinePoint } from '../timelinePoint';
+import type { TimelinePoint } from '../timelinePoint';
 import { TimelineBaseEvent } from './timelineBaseEvent';
-import { TimelineElementDragState } from '../timelineElementDragState';
+import type { TimelineElementDragState } from '../timelineElementDragState';
 
 export class TimelineDragEvent extends TimelineBaseEvent {
   args: MouseEvent | TouchEvent | null = null;

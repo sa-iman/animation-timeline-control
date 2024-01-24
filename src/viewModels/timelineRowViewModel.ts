@@ -1,6 +1,6 @@
-import { TimelineRow } from '../models/timelineRow';
-import { TimelineGroupViewModel } from './timelineGroupViewModel';
-import { TimelineKeyframeViewModel } from './timelineKeyframeViewModel';
+import type { TimelineRow } from '../models/timelineRow';
+import type { TimelineGroupViewModel } from './timelineGroupViewModel';
+import type { TimelineKeyframeViewModel } from './timelineKeyframeViewModel';
 
 export interface TimelineRowViewModel {
   /**

@@ -1,5 +1,5 @@
-import { TimelineRanged } from '../models/timelineRanged';
-import { TimelineOptions } from '../settings/timelineOptions';
+import type { TimelineRanged } from '../models/timelineRanged';
+import type { TimelineOptions } from '../settings/timelineOptions';
 export declare class TimelineUtils {
     static drawLine(ctx: CanvasRenderingContext2D, x1: number, y1: number, x2: number, y2: number): void;
     /**

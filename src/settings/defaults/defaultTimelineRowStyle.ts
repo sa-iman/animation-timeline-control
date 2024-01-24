@@ -1,4 +1,4 @@
-import { TimelineRowStyle } from '../styles/timelineRowStyle';
+import type { TimelineRowStyle } from '../styles/timelineRowStyle';
 import { defaultGroupStyle, defaultRowHeight } from './defaultGroupStyle';
 import { defaultTimelineKeyframeStyle } from './defaultTimelineKeyframeStyle';
 

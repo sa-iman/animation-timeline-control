@@ -1,10 +1,10 @@
-import { TimelineOptions } from '../settings/timelineOptions';
-import { TimelineRowStyle } from '../settings/styles/timelineRowStyle';
+import type { TimelineOptions } from '../settings/timelineOptions';
+import type { TimelineRowStyle } from '../settings/styles/timelineRowStyle';
 import { TimelineKeyframeShape } from '../enums/timelineKeyframeShape';
-import { TimelineGroupStyle } from '../settings/styles/timelineGroupStyle';
-import { TimelineKeyframe } from '../models/timelineKeyframe';
-import { TimelineGroup } from '../models/timelineGroup';
-import { TimelineRow } from '../models/timelineRow';
+import type { TimelineGroupStyle } from '../settings/styles/timelineGroupStyle';
+import type { TimelineKeyframe } from '../models/timelineKeyframe';
+import type { TimelineGroup } from '../models/timelineGroup';
+import type { TimelineRow } from '../models/timelineRow';
 export declare class TimelineStyleUtils {
     static getGroup(groupModel: TimelineGroup | string | null | undefined): TimelineGroup | null;
     static getGroupStyle(groupModel: TimelineGroup | string | null | undefined): TimelineGroupStyle | null;

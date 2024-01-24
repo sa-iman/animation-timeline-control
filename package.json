@@ -1,6 +1,6 @@
 {
-  "name": "animation-timeline-js",
-  "version": "2.3.0",
+  "name": "video-editor-timeline",
+  "version": "2.4.1",
   "description": "animation timeline control based on the canvas.",
   "main": "lib/animation-timeline.min.js",
   "types": "lib/animation-timeline.d.ts",

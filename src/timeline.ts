@@ -2,38 +2,38 @@
 // bundle entry point
 
 import { TimelineEventsEmitter } from './timelineEventsEmitter';
-import { TimelineConsts } from './settings/timelineConsts';
+import type { TimelineConsts } from './settings/timelineConsts';
 
 // @public timeline models
-import { TimelineRanged } from './models/timelineRanged';
-import { TimelineModel } from './models/timelineModel';
-import { TimelineRow } from './models/timelineRow';
-import { TimelineKeyframe } from './models/timelineKeyframe';
+import type { TimelineRanged } from './models/timelineRanged';
+import type { TimelineModel } from './models/timelineModel';
+import type { TimelineRow } from './models/timelineRow';
+import type { TimelineKeyframe } from './models/timelineKeyframe';
 // @public styles
-import { TimelineOptions } from './settings/timelineOptions';
+import type { TimelineOptions } from './settings/timelineOptions';
 
 import { TimelineStyleUtils } from './utils/timelineStyleUtils';
 import { TimelineUtils } from './utils/timelineUtils';
-import { TimelineElement } from './utils/timelineElement';
+import type { TimelineElement } from './utils/timelineElement';
 
 // @private helper containers.
-import { TimelineCutBoundsRectResults } from './utils/timelineCutBoundsRectResults';
-import { TimelineSelectionResults } from './utils/timelineSelectionResults';
-import { TimelineMouseData } from './utils/timelineMouseData';
-import { TimelineElementDragState } from './utils/timelineElementDragState';
+import type { TimelineCutBoundsRectResults } from './utils/timelineCutBoundsRectResults';
+import type { TimelineSelectionResults } from './utils/timelineSelectionResults';
+import type { TimelineMouseData } from './utils/timelineMouseData';
+import type { TimelineElementDragState } from './utils/timelineElementDragState';
 import { TimelineDraggableData } from './utils/timelineDraggableData';
 
 // @private virtual model
-import { TimelineGroupViewModel } from './viewModels/timelineGroupViewModel';
-import { TimelineKeyframeViewModel } from './viewModels/timelineKeyframeViewModel';
-import { TimelineRowViewModel } from './viewModels/timelineRowViewModel';
-import { TimelineViewModel } from './viewModels/timelineViewModel';
+import type { TimelineGroupViewModel } from './viewModels/timelineGroupViewModel';
+import type { TimelineKeyframeViewModel } from './viewModels/timelineKeyframeViewModel';
+import type { TimelineRowViewModel } from './viewModels/timelineRowViewModel';
+import type { TimelineViewModel } from './viewModels/timelineViewModel';
 
 // @public events
 import { TimelineKeyframeChangedEvent } from './utils/events/timelineKeyframeChangedEvent';
 import { TimelineTimeChangedEvent } from './utils/events/timelineTimeChangedEvent';
 import { TimelineSelectedEvent } from './utils/events/timelineSelectedEvent';
-import { TimelineScrollEvent } from './utils/events/timelineScrollEvent';
+import type { TimelineScrollEvent } from './utils/events/timelineScrollEvent';
 import { TimelineClickEvent } from './utils/events/timelineClickEvent';
 import { TimelineDragEvent } from './utils/events/timelineDragEvent';
 
@@ -51,7 +51,7 @@ import { TimelineEvents } from './enums/timelineEvents';
 import { TimelineScrollSource } from './enums/timelineScrollSource';
 import { defaultTimelineConsts } from './settings/defaults/defaultTimelineConsts';
 import { defaultTimelineOptions } from './settings/defaults/defaultTimelineOptions';
-import { TimelineGroup } from './models/timelineGroup';
+import type { TimelineGroup } from './models/timelineGroup';
 
 export class Timeline extends TimelineEventsEmitter {
   /**

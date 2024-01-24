@@ -1,7 +1,7 @@
 import { TimelineKeyframeShape } from '../enums/timelineKeyframeShape';
-import { TimelineKeyframe } from '../models/timelineKeyframe';
-import { TimelineGroupViewModel } from './timelineGroupViewModel';
-import { TimelineRowViewModel } from './timelineRowViewModel';
+import type { TimelineKeyframe } from '../models/timelineKeyframe';
+import type { TimelineGroupViewModel } from './timelineGroupViewModel';
+import type { TimelineRowViewModel } from './timelineRowViewModel';
 
 /**
  * Timeline calculated view model.

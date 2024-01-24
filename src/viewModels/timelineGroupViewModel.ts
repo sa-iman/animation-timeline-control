@@ -1,6 +1,6 @@
 /* eslint-disable  @typescript-eslint/no-explicit-any */
-import { TimelineGroup } from '../models/timelineGroup';
-import { TimelineKeyframeViewModel } from './timelineKeyframeViewModel';
+import type { TimelineGroup } from '../models/timelineGroup';
+import type { TimelineKeyframeViewModel } from './timelineKeyframeViewModel';
 
 export interface TimelineGroupViewModel {
   /**

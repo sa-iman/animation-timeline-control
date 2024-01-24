@@ -1,4 +1,4 @@
-import { TimelineGroupStyle } from '../styles/timelineGroupStyle';
+import type { TimelineGroupStyle } from '../styles/timelineGroupStyle';
 export const defaultRowHeight = 24;
 const margin = 4;
 export const defaultGroupStyle = {

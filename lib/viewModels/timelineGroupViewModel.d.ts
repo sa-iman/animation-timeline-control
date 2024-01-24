@@ -1,5 +1,5 @@
-import { TimelineGroup } from '../models/timelineGroup';
-import { TimelineKeyframeViewModel } from './timelineKeyframeViewModel';
+import type { TimelineGroup } from '../models/timelineGroup';
+import type { TimelineKeyframeViewModel } from './timelineKeyframeViewModel';
 export interface TimelineGroupViewModel {
     /**
      * Size of the element in screen coordinates.

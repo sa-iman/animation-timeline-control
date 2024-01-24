@@ -1,4 +1,4 @@
-import { TimelineElement } from './timelineElement';
+import type { TimelineElement } from './timelineElement';
 export interface TimelineElementDragState extends TimelineElement {
     /**
      * Value that preserved before dragging is started.

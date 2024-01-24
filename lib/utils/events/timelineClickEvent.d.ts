@@ -1,5 +1,5 @@
-import { TimelineElement } from '../timelineElement';
-import { TimelinePoint } from '../timelinePoint';
+import type { TimelineElement } from '../timelineElement';
+import type { TimelinePoint } from '../timelinePoint';
 import { TimelineBaseEvent } from './timelineBaseEvent';
 export declare class TimelineClickEvent extends TimelineBaseEvent {
     args: MouseEvent | TouchEvent | null;

@@ -1,4 +1,4 @@
-import { TimelineConsts } from '../timelineConsts';
+import type { TimelineConsts } from '../timelineConsts';
 
 export const defaultTimelineConsts: TimelineConsts = {
   /**

@@ -1,13 +1,13 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { TimelineOptions } from '../settings/timelineOptions';
-import { TimelineRowStyle } from '../settings/styles/timelineRowStyle';
+import type { TimelineOptions } from '../settings/timelineOptions';
+import type { TimelineRowStyle } from '../settings/styles/timelineRowStyle';
 import { TimelineKeyframeShape } from '../enums/timelineKeyframeShape';
 import { TimelineUtils } from './timelineUtils';
-import { TimelineGroupStyle } from '../settings/styles/timelineGroupStyle';
-import { TimelineKeyframe } from '../models/timelineKeyframe';
+import type { TimelineGroupStyle } from '../settings/styles/timelineGroupStyle';
+import type { TimelineKeyframe } from '../models/timelineKeyframe';
 
-import { TimelineGroup } from '../models/timelineGroup';
-import { TimelineRow } from '../models/timelineRow';
+import type { TimelineGroup } from '../models/timelineGroup';
+import type { TimelineRow } from '../models/timelineRow';
 import { defaultGroupStyle } from '../settings/defaults/defaultGroupStyle';
 import { defaultTimelineKeyframeStyle } from '../settings/defaults/defaultTimelineKeyframeStyle';
 import { defaultTimelineRowStyle } from '../settings/defaults/defaultTimelineRowStyle';

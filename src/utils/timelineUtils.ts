@@ -1,5 +1,5 @@
-import { TimelineRanged } from '../models/timelineRanged';
-import { TimelineOptions } from '../settings/timelineOptions';
+import type { TimelineRanged } from '../models/timelineRanged';
+import type { TimelineOptions } from '../settings/timelineOptions';
 
 const denominators = [1, 2, 5, 10];
 export class TimelineUtils {

@@ -1,6 +1,6 @@
 import { TimelineCapShape } from '../../enums/timelineCapShape';
 import { TimelineCursorType } from '../../enums/timelineCursorType';
-import { TimelineStyle } from '../styles/timelineStyle';
+import type { TimelineStyle } from '../styles/timelineStyle';
 
 export const defaultTimelineStyle = {
   width: 2,

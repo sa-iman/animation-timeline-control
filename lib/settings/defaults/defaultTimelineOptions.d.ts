@@ -1,2 +1,2 @@
-import { TimelineOptions } from '../timelineOptions';
+import type { TimelineOptions } from '../timelineOptions';
 export declare const defaultTimelineOptions: TimelineOptions;

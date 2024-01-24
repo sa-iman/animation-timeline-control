@@ -1,4 +1,4 @@
-import { TimelineOptions } from '../timelineOptions';
+import type { TimelineOptions } from '../timelineOptions';
 import { defaultGroupStyle } from './defaultGroupStyle';
 import { defaultTimelineKeyframeStyle } from './defaultTimelineKeyframeStyle';
 import { defaultTimelineRowStyle } from './defaultTimelineRowStyle';

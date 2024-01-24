@@ -1,5 +1,5 @@
 import { TimelineElementType } from '../enums/timelineElementType';
-import { TimelineElementDragState } from './timelineElementDragState';
+import type { TimelineElementDragState } from './timelineElementDragState';
 
 /**
  * Information about current drag state.

@@ -1,5 +1,5 @@
 import { TimelineKeyframeShape } from '../../enums/timelineKeyframeShape';
-import { TimelineKeyframeStyle } from '../styles/timelineKeyframeStyle';
+import type { TimelineKeyframeStyle } from '../styles/timelineKeyframeStyle';
 
 export const defaultTimelineKeyframeStyle = {
   /**

@@ -1,5 +1,5 @@
 import { TimelineSelectionEventSource } from '../../enums/timelineSelectionEventSource';
-import { TimelineKeyframe } from '../../models/timelineKeyframe';
+import type { TimelineKeyframe } from '../../models/timelineKeyframe';
 
 export class TimelineSelectedEvent {
   /**

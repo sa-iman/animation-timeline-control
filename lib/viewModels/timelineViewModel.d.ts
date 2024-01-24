@@ -1,5 +1,5 @@
-import { TimelineKeyframeViewModel } from './timelineKeyframeViewModel';
-import { TimelineRowViewModel } from './timelineRowViewModel';
+import type { TimelineKeyframeViewModel } from './timelineKeyframeViewModel';
+import type { TimelineRowViewModel } from './timelineRowViewModel';
 export interface TimelineViewModel {
     /**
      * Screen coordinates of the element.

@@ -1,4 +1,4 @@
-import { TimelinePoint } from './timelinePoint';
+import type { TimelinePoint } from './timelinePoint';
 /**
  * Mouse data helper container.
  */

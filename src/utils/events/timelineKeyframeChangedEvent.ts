@@ -1,5 +1,5 @@
 import { TimelineBaseEvent } from './timelineBaseEvent';
-import { TimelineElement } from '../timelineElement';
+import type { TimelineElement } from '../timelineElement';
 import { TimelineEventSource } from '../../enums/timelineEventSource';
 
 export class TimelineKeyframeChangedEvent extends TimelineBaseEvent {
