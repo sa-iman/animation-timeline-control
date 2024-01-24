@@ -1953,7 +1953,7 @@ export class Timeline extends TimelineEventsEmitter {
     if (width === 'auto') {
       width = height;
     }
-    if (height > 0) {
+    if (parseInt(height.toString()) > 0) {
       const x = Math.floor(this._toScreenPx(val));
       y = Math.floor(y);
       const rect = {
