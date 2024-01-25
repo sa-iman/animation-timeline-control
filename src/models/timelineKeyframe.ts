@@ -27,4 +27,6 @@ export interface TimelineKeyframe extends TimelineSelectable, TimelineRanged {
    * Considered to be false when really set as false.
    */
   draggable?: boolean;
+
+  meta?: any;
 }
